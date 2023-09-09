@@ -48,4 +48,5 @@ resource "aws_cloudformation_stack_set_instance" "default" {
   region         = var.stackset_instance_region
   account_id     = length(var.stackset_instance_account_id) > 0 ? var.stackset_instance_account_id[count.index] : null
   stack_set_name = aws_cloudformation_stack_set.default.name
-}  
+}
+ 
