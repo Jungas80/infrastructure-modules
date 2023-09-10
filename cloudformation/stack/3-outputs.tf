@@ -3,7 +3,7 @@ output "stack_name" {
   description = "CloudFormation Stack resource name"
 }
 
-output "stack_arn" {
-  value       = aws_cloudformation_stack.default.arn
-  description = "CloudFormation Stack resource arn"
+output "stack_id" {
+  value       = aws_cloudformation_stack.default.id
+  description = "CloudFormation Stack resource ID"
 }
